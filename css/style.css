@@ -1,8 +1,47 @@
-.underline{
-    text-decoration: line-through;
-    color: red;
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.green{
-    color: green;
+.underline{
+    text-decoration: line-through;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#app{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app input{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#app button{
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: purple;
+    color: white;
+    padding: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#app li span{
+    font-size: 25px;
+}
+
+#app li button{
+    margin-top: 10px;
 }

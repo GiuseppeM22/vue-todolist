@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="app">
-        <input @keyup.enter="aggiungiLista()" v-model="nuovaLista.testo" type="text" placeholder="Inserisci attività">
+        <input minlength="3" @keyup.enter="aggiungiLista()" v-model="nuovaLista.testo" type="text" placeholder="Inserisci attività">
         <button @click="aggiungiLista()">Inserisci nella lista</button>
         <ul>
             <li v-for="(attività, i) in lista" >

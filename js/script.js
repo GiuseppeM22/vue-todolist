@@ -8,17 +8,16 @@
             done: false
         },
         lista:[
-            {testo: "fare cose", done: false},
-            {testo: "fare cose", done: false},
-            {testo: "fare cose", done: false}
+            /*le attivita verranno aggiunte qui*/
         ]
     }
 },
 methods:{
     aggiungiLista(){
-        let nuovaLista =  { ...this.nuovaLista}
-        this.lista.unshift(nuovaLista)
-        this.nuovaLista.testo = ""
+            let nuovaLista =  { ...this.nuovaLista}
+            this.lista.unshift(nuovaLista)
+            this.nuovaLista.testo = ""
+        
     },
     rimuoviAttivita(i){
         this.lista.splice(i, 1)
@@ -27,7 +26,7 @@ methods:{
         this.lista[i].done = !this.lista[i].done
     },
     underline(i){
-        return (this.lista[i].done==true) ? 'underline' : 'green'
+        return (this.lista[i].done==true) ? 'underline' : ''
     }
 
 }
