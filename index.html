@@ -14,7 +14,7 @@
         <button @click="aggiungiLista()">Inserisci nella lista</button>
         <ul>
             <li v-for="(attività, i) in lista" >
-                <span :class="underline(i)">{{attività.testo}}</span>  <button @click="rimuoviAttivita(i)">X</button> <button @click="change(i)">Done</button>
+                <span :class="underline(i)">{{attività.testo}}</span>  <button @click="rimuoviAttivita(i)">Remove</button> <button @click="change(i)">Done</button>
             </li>
         </ul>
     </div>
